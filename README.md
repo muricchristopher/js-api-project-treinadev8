@@ -4,7 +4,7 @@
 <img src="https://raw.githubusercontent.com/muricchristopher/js-random-users-list-api/main/assets/desktop_visual.png" alt="desktop_preview">
 <hr>
 <p style="text-align: center">Mobile</p>
-<img src="https://raw.githubusercontent.com/muricchristopher/js-random-users-list-api/main/assets/mobile_visual.png" alt="mobile_preview">
+<img src="https://raw.githubusercontent.com/muricchristopher/js-random-users-list-api/main/assets/mobile_visual.png" alt="mobile_preview" width="500px">
 
 #### Link para visualização:
 >[Random Users List Generator](https://muricchristopher.github.io/js-random-users-list-api/)
