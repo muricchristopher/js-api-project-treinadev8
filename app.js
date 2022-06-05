@@ -9,7 +9,7 @@ async function getUsers(num){
 
 
 async function displayUsers(){
-  const users = await getUsers(20)
+  const users = await getUsers(2022)
 
   const usersContainer = document.querySelector('.users-container')
   createUserFromList(users, usersContainer)
@@ -17,6 +17,10 @@ async function displayUsers(){
 }
 
 function createUserFromList(users, container){
+  const usersFound = document.querySelector(".users-found")
+
+  usersFound.innerHTML = `Users found: ${users.length}`
+
   users.forEach(user => {
     const div = document.createElement("div")
     div.className = 'user'
