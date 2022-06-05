@@ -27,6 +27,12 @@ main{
   flex-direction: column;
 }
 
+main .navigation{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+
 main .title{
   color: #373C47;
   margin-bottom: 10px;
@@ -37,7 +43,6 @@ main .navigation label {
   grid-template: 1fr / auto 1fr;
   gap: 12px;
   box-shadow: rgba(0, 0,0, 0.27) 0px 0px 0.25em, rgba(0, 0, 0, 0.02) 0px 0.25em 1em;
-  margin-bottom: 10px;
   width: 15em;
   padding: 15px;
   transition: .3s;
@@ -54,6 +59,18 @@ main .navigation label>input {
   width: 100%;
   background: transparent;
   font-size: 1.05rem;
+
+}
+
+.select-country{
+  background-color: transparent;
+  border: none;
+  color: white;
+  background-color: #87A0CE;
+  border-radius: 20px;
+  padding: 20px 5px;
+  box-shadow: rgba(0, 0,0, 0.27) 0px 0px 0.25em, rgba(0, 0, 0, 0.02) 0px 0.25em 1em;
+
 }
 
 .users-container{
@@ -63,7 +80,6 @@ main .navigation label>input {
   flex-wrap: wrap;
   overflow-y: auto;
 }
-
 
 .user{
   display: flex;
@@ -151,3 +167,5 @@ main .navigation label>input {
 .hide{
   display: none;
 }
+
+
