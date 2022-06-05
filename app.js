@@ -1,15 +1,17 @@
 import fetchAPI from './fetchAPI.js'
 
+const loadingContainer = document.querySelector(".loading-container")
 
 async function getUsers(num){
   const {data} = await fetchAPI(`https://randomuser.me/api/?results=${num}`)
   const users =  data.results
+  loadingContainer.classList.add("hide")
   return users
 }
 
 
 async function displayUsers(){
-  const users = await getUsers(2022)
+  const users = await getUsers(1000)
 
   const usersContainer = document.querySelector('.users-container')
   createUserFromList(users, usersContainer)
