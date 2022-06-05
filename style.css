@@ -30,31 +30,70 @@ main .title{
   margin-bottom: 10px;
 }
 
-main #user-search{
-  margin: 0;
-  bottom: 0;
-  border: none;
-
-}
-
-label {
+main .navigation label {
   display: grid;
   grid-template: 1fr / auto 1fr;
   gap: 12px;
   box-shadow: rgba(0, 0,0, 0.27) 0px 0px 0.25em, rgba(0, 0, 0, 0.02) 0px 0.25em 1em;
   margin-bottom: 10px;
   width: 15em;
-  padding: 20px;
+  padding: 15px;
+  transition: .3s;
 }
 
-label:focus-within {
+main .navigation label:focus-within {
   box-shadow: rgba(0, 0,100, 0.27) 0px 0px 0.25em, rgba(12, 12, 1, 0.3) 0px 0.25em 1em;
-  transition: .2s;
+  transition: .3s;
 }
 
-label>input {
+main .navigation label>input {
   outline: none;
   border: none;
   width: 100%;
   background: transparent;
+  font-size: 1.05rem;
+}
+
+.users-container{
+  font-size: 1rem;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+.user{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding: 1em;
+  flex-basis: 33%;
+  gap: 15px;
+  min-width: 300px;
+  transition: .3s;
+
+}
+
+.user img{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.user-informations{
+  margin: auto 0;
+}
+
+.user-informations .user-title{
+  color: #373C47;
+}
+.user-informations .user-locale{
+  font-size: 0.9rem;
+}
+
+.user:hover{
+  transition: .3s;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
