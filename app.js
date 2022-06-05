@@ -9,7 +9,7 @@ async function getUsers(num){
 
 
 async function displayUsers(){
-  const users = await getUsers(50)
+  const users = await getUsers(20)
 
   const usersContainer = document.querySelector('.users-container')
   createUserFromList(users, usersContainer)
